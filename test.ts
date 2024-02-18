@@ -1,1 +1,4 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+ZS042.setTime(0, 0, 0)
+basic.forever(function() {
+    basic.showString(ZS042.getTimeString())
+})
