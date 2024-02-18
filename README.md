@@ -7,11 +7,23 @@ Extension for rtc zs042 with ds3231 chip
 
 ## Usage Example
 
-* test
+* Show time array
 ```blocks
-ZS042.setTime(0, 0, 0)
-basic.forever(function() {
+input.onButtonPressed(Button.A, function () {
+    time_array = ZS042.getTime()
+    basic.showString("" + time_array[0] + ":" + time_array[1])
+})
+let time_array: number[] = []
+ZS042.setTime(17, 10, 0)
+```
+
+* Show time string
+```blocks
+input.onButtonPressed(Button.A, function () {
     basic.showString(ZS042.getTimeString())
+})
+basic.forever(function () {
+    ZS042.setTime(0, 0, 0)
 })
 ```
 
