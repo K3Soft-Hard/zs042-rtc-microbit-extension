@@ -7,7 +7,6 @@
         "microphone": "*"
     },
     "files": [
-        "main.ts",
         "README.md",
         "bdc.ts",
         "zs042.ts"
