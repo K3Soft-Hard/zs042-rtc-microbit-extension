@@ -1,6 +1,20 @@
 
 > Open this page at [https://k3soft-hard.github.io/zs042-rtc-microbit-extension/](https://k3soft-hard.github.io/zs042-rtc-microbit-extension/)
 
+## Introduction
+
+Extension for rtc zs042 with ds3231 chip
+
+## Usage Example
+
+* test
+```blocks
+ZS042.setTime(0, 0, 0)
+basic.forever(function() {
+    basic.showString(ZS042.getTimeString())
+})
+```
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
