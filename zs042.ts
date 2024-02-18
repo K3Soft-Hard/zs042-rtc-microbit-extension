@@ -15,8 +15,12 @@ namespace ZS042 {
     }
 
     initialize()
-
-    function leadingZero(value: number): string {
+    
+    //%blockID="rtcLeadingZero" 
+    //%block="leading zero $value"
+    //%advanced="true"
+    //%weight=100
+    export function leadingZero(value: number): string {
         if (value < 10) {
             return "0" + value
         }
@@ -55,7 +59,6 @@ namespace ZS042 {
     }
     //%blockID="rtcSetTime" 
     //%block="set time string to $input"
-    //%advanced="true"
     //%weight=100
     export function setTimeString(input: string) {
         let time = helpers.stringSplit(input, ":")
@@ -68,7 +71,6 @@ namespace ZS042 {
     }
     //%blockID="rtcGetTimeStr" 
     //%block="get time string"
-    //%advanced="true"
     //%weight=50
     export function getTimeString(): string {
         let time = getTime()
