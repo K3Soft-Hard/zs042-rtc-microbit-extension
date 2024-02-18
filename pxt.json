@@ -1,5 +1,6 @@
 {
     "name": "zs042-rtc-microbit-extension",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
